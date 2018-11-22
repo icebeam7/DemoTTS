@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoTTS.Paginas.PaginaTextoVoz">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Margin="20" Padding="20" Spacing="10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Escribe un mensaje"
+                       FontSize="Large" TextColor="Black"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Start"
+                       Margin="5" />
+
+                <Entry Placeholder="Mensaje..." x:Name="txtMensaje"
+                       FontSize="Medium" TextColor="Blue"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="5" BackgroundColor="LightGray" />
+            </StackLayout>
+
+            <Button Text="Hablar" x:Name="btnHablar"
+                    FontSize="Medium" TextColor="Green"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="LightGray"
+                    Clicked="btnHablar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
